@@ -1,5 +1,6 @@
-//红包
+
 $(function () {
+    //红包
 
     $('#lhb').on('tap', function () {
         $(this).css('display', 'none');
@@ -10,8 +11,13 @@ $(function () {
         $('#lhb_dn').css('display', 'none');
     })
 
-//红包
+    //阳光宽屏
 
+    $('#ygkp').on('click',function(){
+        alert(1);
+        debugger;
+        window.location.href='html/ygkp/ygkp.html'
+    });
 
 
     //nav滑动
@@ -20,6 +26,7 @@ $(function () {
     var x = 0;
 
     oTmb.on('touchstart', function (ev) {
+        alert(3);
         var disX = ev.targetTouches[0].pageX - x;
         //fnMove
         function fnMove(ev) {
@@ -63,4 +70,13 @@ $(function () {
 //刷新
 
 
+
+
+    $('#search_btn').tap(function(){
+        window.location.href='html/search/search.html'
+    })
+
+
+
 })
+
